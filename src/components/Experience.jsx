@@ -29,7 +29,7 @@ export default function Experience() {
         fov: 40,
         near: 0.2,
         far: 200,
-        position: [0, 0, 5],
+        position: [0, 0, 2],
       }}
     >
       <World />
