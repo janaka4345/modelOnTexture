@@ -1,7 +1,9 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { KeyboardControls } from "@react-three/drei";
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
+
 import World from "./World";
+import World2 from "./World2";
 
 // const Controls = {
 //   forward: "forward",
@@ -29,10 +31,12 @@ export default function Experience() {
         fov: 40,
         near: 0.2,
         far: 200,
-        position: [0, 0, 2],
+        position: [10, 10, 10],
       }}
     >
-      <World />
+      {/* <FlyControls args={[g]} /> */}
+      {/* <World /> */}
+      <World2 />
     </Canvas>
     // </KeyboardControls>
   );
